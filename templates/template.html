@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>...You better get ready :)</h3>
+    <br>
+    <p>This is your url: {{url}}</p>
+    {% if name is none %}
+        <p>Hello World!</p>
+    {% elif jedi is defined %}
+        <p>Hello Jedi Master {{name}}</p>
+    {% else %}
+        <p>Hello {{name}}!</p>
+    {% endif %}
+{% endblock %}
